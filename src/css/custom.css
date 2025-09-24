@@ -1,0 +1,66 @@
+/* Card style for each comment */
+.timeline-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    padding: 16px 20px;
+    transition: box-shadow 0.2s;
+    border: 1px solid #eee;
+}
+
+.timeline-card .cui-comment-meta {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.timeline-card .cui-post-author {
+    font-weight: bold;
+    color: #3D9A62;
+    margin-right: 8px;
+}
+
+.timeline-card .cui-post-status {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-left: 8px;
+    background: #d9f9d3;
+    color: #473025;
+}
+
+.timeline-card .cui-post-status:not(:contains("Hadir")) {
+    background: #fdbcbc;
+    color: #d90a11;
+}
+
+.timeline-card .cui-comment-text {
+    font-size: 15px;
+    color: #444;
+    margin-top: 6px;
+    white-space: pre-line;
+}
+
+.timeline-pagination {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.timeline-pagination button {
+    background: #3D9A62;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    margin: 0 2px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.timeline-pagination button.active,
+.timeline-pagination button:hover {
+    background: #d9f9d3;
+    color: #473025;
+}
