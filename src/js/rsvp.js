@@ -80,25 +80,93 @@ export function setupRSVP() {
     const end = start + COMMENTS_PER_PAGE;
     const pageComments = allComments.slice(start, end);
 
+    function timeAgo(dateString) {
+      const now = new Date();
+      const date = new Date(dateString);
+      const diffMs = now.getTime() - date.getTime();
+      const diffSec = Math.floor(diffMs / 1000);
+      const diffMin = Math.floor(diffSec / 60);
+      const diffHour = Math.floor(diffMin / 60);
+      const diffDay = Math.floor(diffHour / 24);
+
+      if (diffSec < 60) return `${diffSec} detik yang lalu`;
+      if (diffMin < 60) return `${diffMin} menit yang lalu`;
+      if (diffHour < 24) return `${diffHour} jam yang lalu`;
+      return `${diffDay} hari yang lalu`;
+    }
+
+    const avatarColors = [
+      "#FF5722", // oranye
+      "#4CAF50", // hijau
+      "#3F51B5", // biru tua
+      "#9C27B0", // ungu
+      "#009688", // teal
+      "#FFC107", // kuning
+      "#795548", // coklat
+      "#607D8B"  // abu kebiruan
+    ];
+
+    function getColorByName(name) {
+      let hash = 0;
+      for (let i = 0; i < name.length; i++) {
+        hash = name.charCodeAt(i) + ((hash << 5) - hash);
+      }
+      const index = Math.abs(hash) % avatarColors.length;
+      return avatarColors[index];
+    }
+
     timeline.innerHTML = pageComments
-      .map(
-        (item) => `
-            <div class="timeline-card">
-                <div class="cui-comment-meta">
-                    <span class="cui-post-author">${item.name}</span>
-                    <span class="cui-post-date">${
-                      item.date
-                        ? new Date(item.date).toLocaleString("id-ID")
-                        : ""
-                    }</span>
-                    <span class="cui-post-status">${
-                      item.status === "y" ? "✅" : "❌"
-                    }</span>
+      .map((item) => {
+        const initials = item.name
+          ? item.name
+              .split(" ")
+              .map((n) => n[0])
+              .join("")
+              .substring(0, 2)
+              .toUpperCase()
+          : "?";
+
+        const bgColor = getColorByName(item.name || "?");
+
+        return `
+          <div class="timeline-card" style="display:flex; flex-direction:column; gap:8px; padding:12px; border-bottom:1px solid #ddd;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div style="display:flex; align-items:flex-start; gap:10px;">
+                <div style="
+                  width:40px;
+                  height:40px;
+                  border-radius:50%;
+                  background:${bgColor};
+                  color:#fff;
+                  display:flex;
+                  align-items:center;
+                  justify-content:center;
+                  font-weight:bold;
+                  font-size:14px;
+                ">
+                  ${initials}
                 </div>
-                <div class="cui-comment-text">${item.message}</div>
+                <div>
+                  <div style="font-size:16px; font-weight:600;">${item.name}</div>
+                  <div style="font-size:12px; color:gray;">
+                    ${item.date ? timeAgo(item.date) : ""}
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span style="font-size:18px;">
+                  ${item.status === "y" ? "✅" : "❌"}
+                </span>
+              </div>
             </div>
-        `
-      )
+
+            <div style="margin-left:50px; font-size:14px; color:#333;">
+              ${item.message}
+            </div>
+          </div>
+        `;
+      })
       .join("");
 
     // Pagination with Prev/Next
