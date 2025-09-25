@@ -103,7 +103,7 @@ export function setupRSVP() {
       "#009688", // teal
       "#FFC107", // kuning
       "#795548", // coklat
-      "#607D8B"  // abu kebiruan
+      "#607D8B", // abu kebiruan
     ];
 
     function getColorByName(name) {
@@ -147,7 +147,9 @@ export function setupRSVP() {
                   ${initials}
                 </div>
                 <div>
-                  <div style="font-size:16px; font-weight:600;">${item.name}</div>
+                  <div style="font-size:16px; font-weight:600;">${
+                    item.name
+                  }</div>
                   <div style="font-size:12px; color:gray;">
                     ${item.date ? timeAgo(item.date) : ""}
                   </div>
@@ -171,6 +173,8 @@ export function setupRSVP() {
 
     // Pagination with Prev/Next
     const totalPages = Math.ceil(allComments.length / COMMENTS_PER_PAGE);
+    document.querySelector("#comments-count").textContent = allComments.length;
+
     if (totalPages > 1) {
       let pagHtml = '<div class="timeline-pagination">';
       pagHtml += `<button type="button" ${
