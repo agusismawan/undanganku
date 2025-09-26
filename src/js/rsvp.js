@@ -32,15 +32,22 @@ export function setupRSVP() {
                 headers: { "Content-Type": "application/json" }
             });
             const result = await res.json();
-            if (result.status === 200) {
-                form.reset();
-                alert("Terima kasih, ucapan Anda sudah terkirim!");
-                // Tambahkan komentar baru ke awal array dan render ulang tanpa reload
-                allComments.unshift(payload);
-                renderTimeline(1);
-            } else {
-                alert("Gagal mengirim. Coba lagi.");
-            }
+            // if (result.status === 200) {
+            //     form.reset();
+            //     alert("Terima kasih, ucapan Anda sudah terkirim!");
+            //     // Tambahkan komentar baru ke awal array dan render ulang tanpa reload
+            //     allComments.unshift(payload);
+            //     renderTimeline(1);
+            // } else {
+            //     alert("Gagal mengirim. Coba lagi.");
+            // }
+            form.reset();
+            alert("Terima kasih, ucapan Anda sudah terkirim!");
+            // Tambahkan komentar baru ke awal array dan render ulang tanpa reload
+            allComments.unshift(payload);
+            renderTimeline(1);
+
+            return result;
         } catch (err) {
             alert("Gagal mengirim. Coba lagi.");
             console.error('Post error:', err);

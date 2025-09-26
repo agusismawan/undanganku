@@ -1,7 +1,29 @@
 export const data = {
+    bride: {
+        L: {
+            id: 1,
+            name: "Agus Dwi Ismawan",
+            child: "Putra Kedua",
+            father: "Sutiyono (Alm.)",
+            mother: "Sri Jarwati",
+            image: "./src/assets/images/cowo.png",
+        },
+        P: {
+            id: 2,
+            name: "Sovia",
+            child: "Putri Keempat",
+            father: "Sukamto",
+            mother: "Suntari",
+            image: "./src/assets/images/cewe.png",
+        },
+
+        couple: "./src/assets/images/couple.png",
+        couple_alt1: "./src/assets/images/couple_alt1.png",
+    },
     time: {
         mariage: {
             month: "OKT",
+            monthName: "Oktober",
             day: "03",
             dayName: "Jumat",
             time: "09.00 WIB",
@@ -10,6 +32,7 @@ export const data = {
         },
         reception: {
             month: "OKT",
+            monthName: "Oktober",
             day: "04",
             dayName: "Sabtu",
             time: "11.00 - 13.00<br>WIB",
