@@ -147,7 +147,7 @@ export function setupRSVP() {
                   ${initials}
                 </div>
                 <div>
-                  <div style="font-size:16px; font-weight:600;">${
+                  <div style="font-size:14px; font-weight:600;">${
                     item.name
                   }</div>
                   <div style="font-size:12px; color:gray;">
@@ -157,8 +157,8 @@ export function setupRSVP() {
               </div>
 
               <div>
-                <span style="font-size:18px;">
-                  ${item.status === "y" ? "✅" : "❌"}
+                <span style="font-size:12px;">
+                  ${item.status === "y" ? "🟢" : "🔴"}
                 </span>
               </div>
             </div>
@@ -177,17 +177,46 @@ export function setupRSVP() {
 
     if (totalPages > 1) {
       let pagHtml = '<div class="timeline-pagination">';
+
+      // Prev
       pagHtml += `<button type="button" ${
         page === 1 ? "disabled" : ""
-      } onclick="window.gotoTimelinePage(${page - 1}, event)">Prev</button>`;
-      for (let i = 1; i <= totalPages; i++) {
+      } onclick="window.gotoTimelinePage(${page - 1}, event)"><</button>`;
+
+      // Elipses logic
+      const pages = [];
+      const add = (n) => {
+        if (!pages.includes(n)) pages.push(n);
+      };
+      const addRange = (a, b) => {
+        for (let i = a; i <= b; i++) add(i);
+      };
+
+      add(1);
+      if (totalPages >= 2) add(2);
+      addRange(Math.max(1, page - 1), Math.min(totalPages, page + 1));
+      if (totalPages >= 2) add(totalPages - 1);
+      add(totalPages);
+
+      pages.sort((a, b) => a - b);
+      for (let i = 0; i < pages.length; i++) {
+        const curr = pages[i];
+        const prev = pages[i - 1];
+
+        if (i > 0 && curr - prev > 1) {
+          pagHtml += `<span class="ellipsis">...</span>`;
+        }
+
         pagHtml += `<button type="button" ${
-          i === page ? 'class="active"' : ""
-        } onclick="window.gotoTimelinePage(${i}, event)">${i}</button>`;
+          curr === page ? 'class="active"' : ""
+        } onclick="window.gotoTimelinePage(${curr}, event)">${curr}</button>`;
       }
+
+      // Next
       pagHtml += `<button type="button" ${
         page === totalPages ? "disabled" : ""
-      } onclick="window.gotoTimelinePage(${page + 1}, event)">Next</button>`;
+      } onclick="window.gotoTimelinePage(${page + 1}, event)">></button>`;
+
       pagHtml += "</div>";
       timeline.innerHTML += pagHtml;
     }
