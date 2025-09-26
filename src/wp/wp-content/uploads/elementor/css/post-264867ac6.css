@@ -197,7 +197,7 @@
   .elementor-element.elementor-element-695d4bef
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("../../2024/12/Mini-AWAL-1-1.jpg");
+  background-image: url("/src/images/gallery-10.jpg");
   background-position: top center;
   background-size: cover;
 }
@@ -1094,7 +1094,7 @@
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer::before {
   background-color: #ffffff;
-  background-image: url("../../2024/12/Mini-AWAL-1-1.jpg");
+  background-image: url("/src/images/gallery-15.jpg");
   --background-overlay: "";
   background-position: top center;
   background-repeat: no-repeat;
@@ -2687,7 +2687,7 @@
   .elementor-element.elementor-element-7668316a
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("../../2024/12/Mini-23TD475-8-Copy-2-1-1-1.jpg");
+  background-image: url("/src/images/wishas.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3125,7 +3125,7 @@
   .elementor-element.elementor-element-65eeb7a4
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("../../2024/12/Mini-AWAL-1-1.jpg");
+  background-image: url("/src/images/footer.jpg");
   background-position: top center;
   background-size: cover;
 }

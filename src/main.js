@@ -1,4 +1,6 @@
 import { data } from "./data.js";
+import { welcome } from "./js/welcome.js";
+import { bride } from "./js/bride.js";
 import { time } from "./js/time.js";
 import { setupRSVP } from "./js/rsvp.js";
 
@@ -11,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         guestDiv.innerHTML = to ? to : 'Teman-teman semua';
     }
 
+    welcome();
+    // bride();
     time();
     setupRSVP();
 

@@ -8,7 +8,7 @@
 			max-width: 100% !important;
 		}
 	</style>
-	<link rel="stylesheet" href="src/css/custom.css">
+	<link rel="stylesheet" href="src/css/global.css">
 	<meta name='robots' content='noindex, follow' />
 	<style>
 		img:is([sizes="auto" i], [sizes^="auto," i]) {
@@ -833,13 +833,21 @@
 					<div class="elementor-element elementor-element-289d78c9 elementor-widget elementor-widget-heading"
 						data-id="289d78c9" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" src="src/images/logo-AS.png" alt="Logo"
+								style="margin:0 auto 14px auto; max-width:80px;">
+						</div>
+					</div>
+
+					<div class="elementor-element elementor-element-289d78c9 elementor-widget elementor-widget-heading"
+						data-id="289d78c9" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-widget-container">
 							<h2 class="elementor-heading-title elementor-size-default">The Wedding Of</h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-1c3dc872 elementor-widget elementor-widget-heading"
 						data-id="1c3dc872" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">Habib & Adiba</h2>
+							<h2 class="elementor-heading-title elementor-size-default" id="bride-names"></h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-7eb37fce elementor-widget elementor-widget-spacer"
@@ -935,7 +943,7 @@
 						data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
 						data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">Habib & Adiba</h2>
+							<h2 class="elementor-heading-title elementor-size-default" id="bride-names-2"></h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-38de1591 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor"
@@ -943,7 +951,7 @@
 						data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
 						data-widget_type="text-editor.default">
 						<div class="elementor-widget-container">
-							<p>Minggu, 30 Maret 2025</p>
+							<p id="wedding-date"></p>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-6f16af62 elementor-widget elementor-widget-html"
@@ -993,9 +1001,7 @@
 						data-id="15421e0d" data-element_type="widget" data-widget_type="image.default">
 						<div class="elementor-widget-container">
 							<img fetchpriority="high" decoding="async" width="378" height="768"
-								src="https://inv.nikustory.com/wp-content/uploads/2024/12/bunga-putih-tema-merah-4.webp"
-								class="attachment-large size-large wp-image-27195" alt=""
-								srcset="https://inv.nikustory.com/wp-content/uploads/2024/12/bunga-putih-tema-merah-4.webp 378w, https://inv.nikustory.com/wp-content/uploads/2024/12/bunga-putih-tema-merah-4-148x300.webp 148w"
+								src="src/images/logo-AS.png" class="attachment-large size-large wp-image-27195" alt=""
 								sizes="(max-width: 378px) 100vw, 378px" />
 						</div>
 					</div>
@@ -1072,41 +1078,43 @@
 								untuk menghadiri acara pernikahan kami :</p>
 						</div>
 					</div>
+					<!-- <div class="bride_couple">
+						<ul role="list" aria-label="List Pasangan Pengantin"></ul>
+					</div> -->
 					<div class="elementor-element elementor-element-5d3c36f8 profil revealatas elementor-widget elementor-widget-image"
 						data-id="5d3c36f8" data-element_type="widget" data-widget_type="image.default">
 						<div class="elementor-widget-container">
-							<img decoding="async" width="768" height="1024"
-								src="src/wp/wp-content/uploads/2024/12/WANITA-1-2-1-1-768x1024.jpg"
+							<img decoding="async" width="768" height="1024" src="src/images/the-groom-768x1025.png"
 								class="attachment-large size-large wp-image-27209" alt=""
-								srcset="https://inv.nikustory.com/wp-content/uploads/2024/12/WANITA-1-2-1-1-768x1024.jpg 768w, https://inv.nikustory.com/wp-content/uploads/2024/12/WANITA-1-2-1-1-225x300.jpg 225w, https://inv.nikustory.com/wp-content/uploads/2024/12/WANITA-1-2-1-1-1152x1536.jpg 1152w, https://inv.nikustory.com/wp-content/uploads/2024/12/WANITA-1-2-1-1.jpg 1326w"
 								sizes="(max-width: 768px) 100vw, 768px" />
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-7775011d reveal elementor-widget elementor-widget-heading"
 						data-id="7775011d" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">Adiba Putri Syakila</h2>
+							<h2 class="elementor-heading-title elementor-size-default">Agus Dwi Ismawan</h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-15be15f8 reveal elementor-widget elementor-widget-text-editor"
 						data-id="15be15f8" data-element_type="widget" data-widget_type="text-editor.default">
 						<div class="elementor-widget-container">
-							<p>Putri Ketiga dari Bapak Putra</p>
-							<p>&amp; Ibu Putri</p>
+							<p>Putra Kedua dari Bapak Sutiyono (alm.)</p>
+							<p>&amp; Ibu Sri Jarwati</p>
 						</div>
 					</div>
-					<div class="elementor-element elementor-element-64847d8b e-grid-align-tablet-center e-grid-align-mobile-center reveal elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-invisible elementor-widget elementor-widget-social-icons"
-						data-id="64847d8b" data-element_type="widget"
-						data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-						data-widget_type="social-icons.default">
+					<div class="elementor-element elementor-element-309a51f9 elementor-align-center elementor-tablet-align-center elementor-mobile-align-center reveal wdp-sticky-section-no elementor-widget elementor-widget-button"
+						data-id="309a51f9" data-element_type="widget" data-widget_type="button.default">
 						<div class="elementor-widget-container">
-							<div class="elementor-social-icons-wrapper elementor-grid">
-								<span class="elementor-grid-item">
-									<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-6cc0603"
-										target="_blank">
-										<span class="elementor-screen-only">Instagram</span>
-										<i class="fab fa-instagram"></i> </a>
-								</span>
+							<div class="elementor-button-wrapper">
+								<a class="elementor-button elementor-button-link elementor-size-sm"
+									href="https://www.instagram.com/agus.ismawan?igsh=MTlqMDFyZThsaDhzZg=="
+									target="_blank">
+									<span class="elementor-button-content-wrapper">
+										<span class="elementor-button-icon">
+											<i aria-hidden="true" class="fab fa-instagram"></i> </span>
+										<span class="elementor-button-text">agus.ismawan</span>
+									</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -1119,38 +1127,36 @@
 					<div class="elementor-element elementor-element-2f68c499 profil revealatas elementor-widget elementor-widget-image"
 						data-id="2f68c499" data-element_type="widget" data-widget_type="image.default">
 						<div class="elementor-widget-container">
-							<img decoding="async" width="724" height="1024"
-								src="src/wp/wp-content/uploads/2024/12/PRIA-e1680581993971-2-1-724x1024.jpg"
+							<img decoding="async" width="724" height="1024" src="src/images/the-bride-768x1025.png"
 								class="attachment-large size-large wp-image-27210" alt=""
-								srcset="https://inv.nikustory.com/wp-content/uploads/2024/12/PRIA-e1680581993971-2-1-724x1024.jpg 724w, https://inv.nikustory.com/wp-content/uploads/2024/12/PRIA-e1680581993971-2-1-212x300.jpg 212w, https://inv.nikustory.com/wp-content/uploads/2024/12/PRIA-e1680581993971-2-1-768x1086.jpg 768w, https://inv.nikustory.com/wp-content/uploads/2024/12/PRIA-e1680581993971-2-1-1086x1536.jpg 1086w, https://inv.nikustory.com/wp-content/uploads/2024/12/PRIA-e1680581993971-2-1.jpg 1237w"
 								sizes="(max-width: 724px) 100vw, 724px" />
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-5f5930f8 reveal elementor-widget elementor-widget-heading"
 						data-id="5f5930f8" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">Habib Yulianto</h2>
+							<h2 class="elementor-heading-title elementor-size-default">Sovia</h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-51094d56 reveal elementor-widget elementor-widget-text-editor"
 						data-id="51094d56" data-element_type="widget" data-widget_type="text-editor.default">
 						<div class="elementor-widget-container">
-							<p>Putra Ketiga dari Bapak Putra</p>
-							<p>&amp; Ibu Putri</p>
+							<p>Putri Keempat dari Bapak Sukamto</p>
+							<p>&amp; Ibu Suntari</p>
 						</div>
 					</div>
-					<div class="elementor-element elementor-element-68011971 e-grid-align-tablet-center e-grid-align-mobile-center reveal elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-invisible elementor-widget elementor-widget-social-icons"
-						data-id="68011971" data-element_type="widget"
-						data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-						data-widget_type="social-icons.default">
+					<div class="elementor-element elementor-element-309a51f9 elementor-align-center elementor-tablet-align-center elementor-mobile-align-center reveal wdp-sticky-section-no elementor-widget elementor-widget-button"
+						data-id="309a51f9" data-element_type="widget" data-widget_type="button.default">
 						<div class="elementor-widget-container">
-							<div class="elementor-social-icons-wrapper elementor-grid">
-								<span class="elementor-grid-item">
-									<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-6cc0603"
-										target="_blank">
-										<span class="elementor-screen-only">Instagram</span>
-										<i class="fab fa-instagram"></i> </a>
-								</span>
+							<div class="elementor-button-wrapper">
+								<a class="elementor-button elementor-button-link elementor-size-sm"
+									href="https://www.instagram.com/soviaa21?igsh=eXBycTV6cGcwNGts" target="_blank">
+									<span class="elementor-button-content-wrapper">
+										<span class="elementor-button-icon">
+											<i aria-hidden="true" class="fab fa-instagram"></i> </span>
+										<span class="elementor-button-text">soviaa21</span>
+									</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -1175,8 +1181,8 @@
 						data-id="11f3c439" data-element_type="widget" data-widget_type="image.default">
 						<div class="elementor-widget-container">
 							<img loading="lazy" decoding="async" width="172" height="243"
-								src="https://inv.nikustory.com/wp-content/uploads/2024/12/Picture1-3-1.svg"
-								class="attachment-large size-large wp-image-27197" alt="" />
+								src="src/images/Picture1-3-1.svg" class="attachment-large size-large wp-image-27197"
+								alt="" />
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-7ea63d1a reveal elementor-widget elementor-widget-text-editor"
@@ -1213,23 +1219,13 @@
 						data-id="20230fdc" data-element_type="widget" data-widget_type="image.default">
 						<div class="elementor-widget-container">
 							<img loading="lazy" decoding="async" width="1920" height="2129"
-								src="src/wp/wp-content/uploads/2024/12/Mini-COVER-3-1.jpg"
-								class="attachment-full size-full wp-image-27211" alt=""
-								srcset="https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-COVER-3-1.jpg 1920w, https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-COVER-3-1-271x300.jpg 271w, https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-COVER-3-1-923x1024.jpg 923w, https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-COVER-3-1-768x852.jpg 768w, https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-COVER-3-1-1385x1536.jpg 1385w, https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-COVER-3-1-1847x2048.jpg 1847w"
+								src="src/images/love-story.jpg" class="attachment-full size-full wp-image-27211" alt=""
 								sizes="(max-width: 1920px) 100vw, 1920px" />
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-e2bf48a e-con-full revealatas e-flex e-con e-child"
 						data-id="e2bf48a" data-element_type="container"
 						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-element elementor-element-7eb7515e reveal elementor-widget elementor-widget-text-editor"
-							data-id="7eb7515e" data-element_type="widget"
-							data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
-							data-widget_type="text-editor.default">
-							<div class="elementor-widget-container">
-								<p>Awal Bertemu</p>
-							</div>
-						</div>
 						<div class="elementor-element elementor-element-2f54183e revealr elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
 							data-id="2f54183e" data-element_type="widget" data-widget_type="divider.default">
 							<div class="elementor-widget-container">
@@ -1241,56 +1237,6 @@
 						</div>
 						<div class="elementor-element elementor-element-2b232de5 reveal elementor-widget elementor-widget-text-editor"
 							data-id="2b232de5" data-element_type="widget" data-widget_type="text-editor.default">
-							<div class="elementor-widget-container">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-4172cc18 reveal elementor-widget elementor-widget-text-editor"
-							data-id="4172cc18" data-element_type="widget"
-							data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
-							data-widget_type="text-editor.default">
-							<div class="elementor-widget-container">
-								<p>Lamaran</p>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-6ddff504 revealr elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-							data-id="6ddff504" data-element_type="widget" data-widget_type="divider.default">
-							<div class="elementor-widget-container">
-								<div class="elementor-divider">
-									<span class="elementor-divider-separator">
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-30345ba5 reveal elementor-widget elementor-widget-text-editor"
-							data-id="30345ba5" data-element_type="widget" data-widget_type="text-editor.default">
-							<div class="elementor-widget-container">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-301979b4 reveal elementor-widget elementor-widget-text-editor"
-							data-id="301979b4" data-element_type="widget"
-							data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
-							data-widget_type="text-editor.default">
-							<div class="elementor-widget-container">
-								<p>Pernikahan</p>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-5c48fac3 revealr elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-							data-id="5c48fac3" data-element_type="widget" data-widget_type="divider.default">
-							<div class="elementor-widget-container">
-								<div class="elementor-divider">
-									<span class="elementor-divider-separator">
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-6a8c751b reveal elementor-widget elementor-widget-text-editor"
-							data-id="6a8c751b" data-element_type="widget" data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -1383,79 +1329,188 @@
 							<h2 class="elementor-heading-title elementor-size-default">Galeri Foto</h2>
 						</div>
 					</div>
-					<div class="elementor-element elementor-element-581a934d reveal elementor-widget elementor-widget-gallery"
+
+					<div class="elementor-element elementor-element-581a934d reveal wdp-sticky-section-no elementor-widget elementor-widget-gallery"
 						data-id="581a934d" data-element_type="widget"
-						data-settings="{&quot;gallery_layout&quot;:&quot;justified&quot;,&quot;ideal_row_height&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:300,&quot;sizes&quot;:[]},&quot;ideal_row_height_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:300,&quot;sizes&quot;:[]},&quot;ideal_row_height_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:300,&quot;sizes&quot;:[]},&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;link_to&quot;:&quot;file&quot;,&quot;overlay_background&quot;:&quot;yes&quot;,&quot;content_hover_animation&quot;:&quot;fade-in&quot;}"
+						data-settings="{&quot;gallery_layout&quot;:&quot;justified&quot;,&quot;ideal_row_height&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:230,&quot;sizes&quot;:[]},&quot;ideal_row_height_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:300,&quot;sizes&quot;:[]},&quot;ideal_row_height_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:153,&quot;sizes&quot;:[]},&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;link_to&quot;:&quot;file&quot;,&quot;overlay_background&quot;:&quot;yes&quot;,&quot;content_hover_animation&quot;:&quot;fade-in&quot;}"
 						data-widget_type="gallery.default">
 						<div class="elementor-widget-container">
-							<!-- <div class="elementor-gallery__container"></div> -->
 							<div class="elementor-gallery__container">
 								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-									href="src/wp/wp-content/uploads/2024/12/samasa-7789.png"
-									data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="581a934d"
-									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjcyMTIsInVybCI6Imh0dHBzOlwvXC9pbnYubmlrdXN0b3J5LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNFwvMTJcL01pbmktMjNURDQ3NS0xMS0yLTEuanBnIiwic2xpZGVzaG93IjoiNTgxYTkzNGQifQ%3D%3D">
+									href="src/images/gallery-1.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI1OTUsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMS5qcGciLCJzbGlkZXNob3ciOiI0MTI4OGVmZCJ9">
 									<div class="e-gallery-image elementor-gallery-item__image"
-										data-thumbnail="src/wp/wp-content/uploads/2024/12/samasa-7789.png"
-										data-width="1600" data-height="2396" aria-label="" role="img"></div>
+										data-thumbnail="src/images/gallery-1.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
 									<div class="elementor-gallery-item__overlay"></div>
 								</a>
 								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-									href="src/wp/wp-content/uploads/2024/12/Mini-23TD475-10-2-2-1.jpg"
-									data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="581a934d"
-									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjcyMTMsInVybCI6Imh0dHBzOlwvXC9pbnYubmlrdXN0b3J5LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNFwvMTJcL01pbmktMjNURDQ3NS0xMC0yLTItMS5qcGciLCJzbGlkZXNob3ciOiI1ODFhOTM0ZCJ9">
+									href="src/images/gallery-2.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI1OTYsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMi5qcGciLCJzbGlkZXNob3ciOiI0MTI4OGVmZCJ9">
 									<div class="e-gallery-image elementor-gallery-item__image"
-										data-thumbnail="https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-23TD475-10-2-2-1.jpg"
-										data-width="1600" data-height="2396" aria-label="" role="img"></div>
+										data-thumbnail="src/images/gallery-2.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
 									<div class="elementor-gallery-item__overlay"></div>
 								</a>
 								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-									href="src/wp/wp-content/uploads/2024/12/Mini-23TD475-9-scaled-2-2.jpg"
-									data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="581a934d"
-									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjcyMTQsInVybCI6Imh0dHBzOlwvXC9pbnYubmlrdXN0b3J5LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNFwvMTJcL01pbmktMjNURDQ3NS05LXNjYWxlZC0yLTIuanBnIiwic2xpZGVzaG93IjoiNTgxYTkzNGQifQ%3D%3D">
+									href="src/images/gallery-3.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI1OTcsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMy5qcGciLCJzbGlkZXNob3ciOiI0MTI4OGVmZCJ9">
 									<div class="e-gallery-image elementor-gallery-item__image"
-										data-thumbnail="https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-23TD475-9-scaled-2-2.jpg"
-										data-width="1710" data-height="2560" aria-label="" role="img"></div>
+										data-thumbnail="src/images/gallery-3.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<!-- <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-4.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI1OTgsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtNC5qcGciLCJzbGlkZXNob3ciOiI0MTI4OGVmZCJ9">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-4.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a> -->
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-5.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI1OTksInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtNS5qcGciLCJzbGlkZXNob3ciOiI0MTI4OGVmZCJ9">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-5.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
 									<div class="elementor-gallery-item__overlay"></div>
 								</a>
 								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-									href="src/wp/wp-content/uploads/2024/12/Mini-AWAL-1-1.jpg"
-									data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="581a934d"
-									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjcyMDgsInVybCI6Imh0dHBzOlwvXC9pbnYubmlrdXN0b3J5LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNFwvMTJcL01pbmktQVdBTC0xLTEuanBnIiwic2xpZGVzaG93IjoiNTgxYTkzNGQifQ%3D%3D">
+									href="src/images/gallery-6.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDAsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtNi5qcGciLCJzbGlkZXNob3ciOiI0MTI4OGVmZCJ9">
 									<div class="e-gallery-image elementor-gallery-item__image"
-										data-thumbnail="https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-AWAL-1-1.jpg"
-										data-width="1920" data-height="2545" aria-label="" role="img"></div>
+										data-thumbnail="src/images/gallery-6.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
 									<div class="elementor-gallery-item__overlay"></div>
 								</a>
 								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-									href="src/wp/wp-content/uploads/2024/12/Mini-COVER-3-1.jpg"
-									data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="581a934d"
-									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjcyMTEsInVybCI6Imh0dHBzOlwvXC9pbnYubmlrdXN0b3J5LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNFwvMTJcL01pbmktQ09WRVItMy0xLmpwZyIsInNsaWRlc2hvdyI6IjU4MWE5MzRkIn0%3D">
+									href="src/images/gallery-7.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDEsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtNy5qcGciLCJzbGlkZXNob3ciOiI0MTI4OGVmZCJ9">
 									<div class="e-gallery-image elementor-gallery-item__image"
-										data-thumbnail="https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-COVER-3-1.jpg"
-										data-width="1920" data-height="2129" aria-label="" role="img"></div>
+										data-thumbnail="src/images/gallery-7.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
 									<div class="elementor-gallery-item__overlay"></div>
 								</a>
 								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-									href="src/wp/wp-content/uploads/2024/12/Mini-23TD475-10-2-2.jpg"
-									data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="581a934d"
-									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjcyMTUsInVybCI6Imh0dHBzOlwvXC9pbnYubmlrdXN0b3J5LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNFwvMTJcL01pbmktMjNURDQ3NS0xMC0yLTIuanBnIiwic2xpZGVzaG93IjoiNTgxYTkzNGQifQ%3D%3D">
+									href="src/images/gallery-8.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDIsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtOC5qcGciLCJzbGlkZXNob3ciOiI0MTI4OGVmZCJ9">
 									<div class="e-gallery-image elementor-gallery-item__image"
-										data-thumbnail="https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-23TD475-10-2-2.jpg"
-										data-width="1600" data-height="2396" aria-label="" role="img"></div>
+										data-thumbnail="src/images/gallery-8.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
 									<div class="elementor-gallery-item__overlay"></div>
 								</a>
 								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-									href="src/wp/wp-content/uploads/2024/12/Mini-23TD475-10-2-2.jpg"
-									data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="581a934d"
-									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjcyMTUsInVybCI6Imh0dHBzOlwvXC9pbnYubmlrdXN0b3J5LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNFwvMTJcL01pbmktMjNURDQ3NS0xMC0yLTIuanBnIiwic2xpZGVzaG93IjoiNTgxYTkzNGQifQ%3D%3D">
+									href="src/images/gallery-9.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDMsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtOS5qcGciLCJzbGlkZXNob3ciOiI0MTI4OGVmZCJ9">
 									<div class="e-gallery-image elementor-gallery-item__image"
-										data-thumbnail="https://inv.nikustory.com/wp-content/uploads/2024/12/Mini-23TD475-10-2-2.jpg"
-										data-width="1600" data-height="2396" aria-label="" role="img"></div>
+										data-thumbnail="src/images/gallery-9.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-10.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDQsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMTAuanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-10.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-11.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDUsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMTEuanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-11.jpg" data-width="1152" data-height="768"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-12.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDYsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMTIuanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-12.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-13.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDcsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMTMuanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-13.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-14.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDgsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMTQuanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-14.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-15.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MDksInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMTUuanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-15.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-16.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MTAsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMTYuanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-16.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-17.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MTIsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMTguanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-17.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-18.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MTMsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMTkuanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-18.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
+									<div class="elementor-gallery-item__overlay"></div>
+								</a>
+								<a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+									href="src/images/gallery-19.jpg" data-elementor-open-lightbox="yes"
+									data-elementor-lightbox-slideshow="581a934d"
+									data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTI2MTQsInVybCI6Imh0dHBzOlwvXC9oaS5uaWt1c3RvcnkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMFwvZ2wtMjAuanBnIiwic2xpZGVzaG93IjoiNDEyODhlZmQifQ%3D%3D">
+									<div class="e-gallery-image elementor-gallery-item__image"
+										data-thumbnail="src/images/gallery-19.jpg" data-width="1024" data-height="1536"
+										aria-label="" role="img"></div>
 									<div class="elementor-gallery-item__overlay"></div>
 								</a>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -1663,7 +1718,6 @@
 														<img loading="lazy" decoding="async" width="1200" height="342"
 															src="src/wp/wp-content/uploads/2024/12/1200px-Logo_dana_blue.svg-1-1.png"
 															class="attachment-full size-full wp-image-26909" alt=""
-															srcset="https://inv.nikustory.com/wp-content/uploads/2024/12/1200px-Logo_dana_blue.svg-1-1.png 1200w, https://inv.nikustory.com/wp-content/uploads/2024/12/1200px-Logo_dana_blue.svg-1-1-300x86.png 300w, https://inv.nikustory.com/wp-content/uploads/2024/12/1200px-Logo_dana_blue.svg-1-1-1024x292.png 1024w, https://inv.nikustory.com/wp-content/uploads/2024/12/1200px-Logo_dana_blue.svg-1-1-768x219.png 768w"
 															sizes="(max-width: 1200px) 100vw, 1200px" />
 													</div>
 												</div>
@@ -1965,7 +2019,7 @@
 							<div class="elementor-element elementor-element-3f681445 revealin elementor-widget elementor-widget-heading"
 								data-id="3f681445" data-element_type="widget" data-widget_type="heading.default">
 								<div class="elementor-widget-container">
-									<h2 class="elementor-heading-title elementor-size-default">Habib & Adiba</h2>
+									<h2 class="elementor-heading-title elementor-size-default" id="bride-names-3"></h2>
 								</div>
 							</div>
 						</div>
@@ -1992,29 +2046,14 @@
 							<div class="elementor-element elementor-element-1094c082 elementor-widget elementor-widget-text-editor"
 								data-id="1094c082" data-element_type="widget" data-widget_type="text-editor.default">
 								<div class="elementor-widget-container">
-									<p>Made with <img decoding="async" class="emoji" role="img" draggable="false"
-											src="https://s.w.org/images/core/emoji/13.0.1/svg/2764.svg" alt="❤" /> by
-										Niku Story
-									</p>
+									<p>Made with ☕ by ismwn</p>
 								</div>
 							</div>
-							<div class="elementor-element elementor-element-61f0da5b elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+							<div class="elementor-element elementor-element-61f0da5b elementor-shape-rounded  elementor-widget"
 								data-id="61f0da5b" data-element_type="widget" data-widget_type="social-icons.default">
 								<div class="elementor-widget-container">
-									<div class="elementor-social-icons-wrapper elementor-grid">
-										<span class="elementor-grid-item">
-											<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-d0d1213"
-												href="https://www.instagram.com/nikustory/" target="_blank">
-												<span class="elementor-screen-only">Instagram</span>
-												<i class="fab fa-instagram"></i> </a>
-										</span>
-										<span class="elementor-grid-item">
-											<a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-c981bfa"
-												href="https://wa.me/6285888881622" target="_blank">
-												<span class="elementor-screen-only">Whatsapp</span>
-												<i class="fab fa-whatsapp"></i> </a>
-										</span>
-									</div>
+									<img loading="lazy" decoding="async" src="src/images/logo-AS-725B50-wTagline.png"
+										alt="Logo" style="margin:0 auto 16px auto; max-width:120px;">
 								</div>
 							</div>
 							<div class="elementor-element elementor-element-b572d96 elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-weddingpress-audio"
@@ -2028,17 +2067,9 @@
 									</script>
 
 									<div id="audio-container" class="audio-box">
-
-
-
 										<audio id="song" loop>
-											<source
-												src="https://inv.nikustory.com/wp-content/uploads/2024/12/Zack-Tabudlo-Give-Me-Your-Forever-Lyric-Video-dt-56.mp3"
-												type="audio/mp3">
+											<source src="src/audio/wedding.mp3" type="audio/mp3">
 										</audio>
-
-
-
 										<div class="elementor-icon-wrapper" id="unmute-sound" style="display: none;">
 											<div class="elementor-icon elementor-animation-shrink">
 												<i aria-hidden="true" class="far fa-pause-circle"></i>
@@ -2094,765 +2125,7 @@
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 			<script src="src/main.js" type="module"></script>
-			<script>
-				document.addEventListener('DOMContentLoaded', function () {
-					// === DETEKSI EDITOR ELEMENTOR (ketat & aman untuk PREVIEW) ===
-					function isElementorEditing() {
-						try {
-							const qs = new URLSearchParams(location.search);
-
-							// 1) Preview WordPress biasa → BUKAN editor
-							if (qs.get('preview') === 'true') return false;
-
-							// 2) Halaman "elementor-preview" (iframe konten saat builder)
-							//    Anggap editor HANYA jika parent benar2 editor aktif
-							if (qs.has('elementor-preview')) {
-								if (window.parent && window.parent !== window) {
-									const pd = window.parent.document;
-									if (pd?.body?.classList?.contains('elementor-editor-active')) return true;
-									if (window.parent.elementorFrontend?.isEditMode?.() === true) return true;
-								}
-								return false; // bukan di dalam builder → perlakukan seperti front-end
-							}
-
-							// 3) Sisa cek standar builder
-							if (window.elementorFrontend?.isEditMode?.() === true) return true;
-							if (document.body.classList.contains('elementor-editor-active')) return true;
-							if (/\baction=elementor\b/i.test(location.search)) return true;
-
-							// 4) (Opsional) jika halaman ditampilkan DI DALAM jendela builder
-							if (window.parent && window.parent !== window) {
-								const pd = window.parent.document;
-								if (pd?.body?.classList?.contains('elementor-editor-active')) return true;
-								if (/\baction=elementor\b/i.test(window.parent.location.search)) return true;
-								if (window.parent.elementorFrontend?.isEditMode?.() === true) return true;
-							}
-						} catch (e) { /* cross-origin: anggap bukan editor */ }
-
-						return false;
-					}
-
-					if (isElementorEditing()) {
-						console.log('[cleanup] Mode Elementor editor terdeteksi → cleanup dimatikan.');
-						return; // hentikan seluruh cleanup
-					}
-
-					// Utility batch remove
-					function batchRemove(elements) {
-						if (elements.length) {
-							requestAnimationFrame(() => elements.forEach(el => el.remove()));
-						}
-					}
-
-					// ✅ Tambahkan helper ini DI SINI (global di dalam blok <script> / DOMContentLoaded)
-					function isDivOrSpace(el) {
-						return !!(el && el.classList &&
-							(el.classList.contains('elementor-widget-divider') ||
-								el.classList.contains('elementor-widget-spacer')));
-					}
-
-
-					// 1. Hapus semua tombol lokasi-btn kosong / invalid (kebal "Not Found.")
-					function removeButtonsLokasiIfEmpty() {
-						const toRemove = [];
-						const seen = new Set();
-
-						const isBadHref = (hrefRaw) => {
-							const h = (hrefRaw || '').trim();
-
-							if (!h) return true;
-
-							const l = h.toLowerCase();
-
-							// Placeholder umum + pola "Not Found"
-							if (
-								l === '#' || l === '-' || l === 'null' || l === 'javascript:void(0)' ||
-								l.includes('not%20found') || l.includes('not found') ||
-								l === 'http://not%20found.' || l === 'https://not%20found.' ||
-								l === 'http://not found.' || l === 'https://not found./'
-							) return true;
-
-							// URL tidak valid (throw saat diparse)
-							try {
-								const u = new URL(h.html);
-								if (!u.hostname) return true;
-								// optional: kalau mau ketat hanya izinkan domain peta
-								// if (!/maps\.google\.|goo\.gl\/maps|waze\.com\/ul/i.test(l)) return true;
-							} catch (e) {
-								return true;
-							}
-
-							return false;
-						};
-
-						// Ambil semua kandidat tombol: yang diberi class khusus ATAU teks "Lihat Lokasi"
-						const candidates = document.querySelectorAll(
-							'.lokasi-btn, .elementor-widget-button a.elementor-button'
-						);
-
-						candidates.forEach(node => {
-							const linkEl = node.tagName === 'A'
-								? node
-								: node.querySelector('a, [role="link"], [role="button"]');
-
-							if (!linkEl) return;
-
-							const text = (linkEl.textContent || linkEl.getAttribute('aria-label') || '').trim();
-							const isLokasiBtn = node.classList.contains('lokasi-btn') || /lihat lokasi/i.test(text);
-
-							if (!isLokasiBtn) return; // jangan ganggu tombol lain
-
-							const href = linkEl.getAttribute('href') || '';
-
-							if (isBadHref(href)) {
-								// Hapus wrapper widget button jika ada, fallback ke .elementor-widget, terakhir anchor itu sendiri
-								const wrapper =
-									linkEl.closest('.elementor-widget-button') ||
-									linkEl.closest('.elementor-widget') ||
-									linkEl;
-
-								if (wrapper && !seen.has(wrapper)) {
-									seen.add(wrapper);
-									toRemove.push(wrapper);
-								}
-							}
-						});
-
-						// Eksekusi penghapusan dalam batch agar aman terhadap reflow
-						requestAnimationFrame(() => {
-							toRemove.forEach(el => el.remove());
-						});
-					}
-
-
-
-					// 2. Hapus social widget kosong
-					// ====== Social widget cleaner ======
-					function isInvalidSocialHref(hrefRaw) {
-						var s = (hrefRaw || '').trim();
-
-						// decode dan normalisasi
-						try { s = decodeURIComponent(s); } catch (e) { }
-						s = s.replace(/\s+/g, ' ').trim().toLowerCase();
-						// buang skema & www
-						s = s.replace(/^(https?:)?\/\/(www\.)?/, '');
-
-						// aturan invalid
-						if (!s) return true;                       // kosong
-						if (s === '#' || s === '-' || s === '0') return true;
-						if (s === 'null' || s === 'undefined') return true;
-						if (/^javascript:/.test(s)) return true;
-						if (/^mailto:\s*$/i.test(hrefRaw || '')) return true; // mailto kosong
-						if (/^tel:\s*$/i.test(hrefRaw || '')) return true;    // tel kosong
-						if (/^[\.\-]+$/.test(s)) return true;
-
-						// placeholder umum (id/en)
-						if (s.indexOf('not found') !== -1) return true;
-						if (s.indexOf('tidak tersedia') !== -1) return true;
-						if (s.indexOf('coming soon') !== -1) return true;
-						if (s.indexOf('kosong') !== -1) return true;
-
-						return false;
-					}
-
-					function cleanSocialWidgets() {
-						document.querySelectorAll('.elementor-widget-social-icons').forEach(function (widget) {
-							var items = Array.from(widget.querySelectorAll('.elementor-social-icons-wrapper .elementor-grid-item'));
-							var anyValid = false;
-
-							items.forEach(function (item) {
-								var a = item.querySelector('a');
-								var href = a ? a.getAttribute('href') : '';
-								if (!a || isInvalidSocialHref(href)) {
-									item.remove(); // buang icon yang invalid
-								} else {
-									anyValid = true;
-								}
-							});
-
-							// jika semua icon terhapus → hapus widget-nya
-							if (!anyValid) {
-								widget.remove();
-							}
-						});
-					}
-
-
-					// 3. Hapus HTML widget kosong
-					function removeEmptyHTMLWidgets() {
-						const toRemove = [];
-						document.querySelectorAll('.elementor-widget-html').forEach(widget => {
-							const container = widget.querySelector('.elementor-widget-container');
-							if (!container) return;
-							const html = container.innerHTML.replace(/<!--.*?-->/g, '').trim();
-      if (!html) toRemove.push(widget);
-						});
-						batchRemove(toRemove);
-					}
-
-					// 4) Hapus SELURUH .acara-con di FRONTEND jika nama_acara kosong/null/tidak ada
-					function removeAcaraContainerIfEmpty() {
-						const errorWords = /(not\s*found|null|undefined|tidak\s*tersedia|^\s*-\s*$)/i;
-						const toRemove = [];
-
-						document.querySelectorAll('.acara-con').forEach(container => {
-							// cari marker yg dibungkus dari shortcode
-							const marker = container.querySelector('.nama-acara-marker');
-
-							// jika marker tidak ada → kontainer ini tidak punya nama_acara → hapus
-							if (!marker) {
-								toRemove.push(container);
-								return;
-							}
-
-							// jika marker ada tapi teks kosong / error → hapus
-							const nameText = (marker.textContent || '').replace(/\s+/g, ' ').trim();
-							if (nameText === '' || errorWords.test(nameText)) {
-								toRemove.push(container);
-								return;
-							}
-
-							// kalau ada teks valid → biarkan
-						});
-
-						batchRemove(toRemove);
-					}
-
-
-					// 5. Hapus widget heading waktu_acara jika kosong atau masih shortcode
-					function removeWaktuAcaraIfEmpty() {
-						const toRemove = [];
-
-						document.querySelectorAll('.elementor-widget-heading, .elementor-widget-text-editor').forEach(widget => {
-							const container = widget.querySelector('.elementor-widget-container');
-							if (!container) return;
-
-							const rawHTML = container.innerHTML.toLowerCase();
-							const cleanText = container.textContent.replace(/\s+/g, ' ')
-								.replace(/&nbsp;/gi, ' ')
-								.trim()
-								.toLowerCase();
-
-							// Cek apakah widget memang untuk waktu_acara (shortcode)
-							const isWidgetForWaktuAcara = /\[wedding_info\s+field=["']waktu_acara["']/i.test(rawHTML);
-
-							// Apakah labelnya pakai "pukul" atau "at"
-							const isPukulOrAt = cleanText.startsWith('pukul') || cleanText.startsWith('at');
-
-							// Apakah isi teks mencurigakan (error-like)
-							const errorKeywords = ['not found', 'null', 'undefined'];
-							const isErrorOutput = errorKeywords.some(k => cleanText.includes(k));
-
-							const isTooShort = cleanText.length < 8; // lebih ketat dari 15 → "at :", "pukul :" bisa kehapus
-
-							// Hapus jika:
-							// - widget waktu_acara dan error/pendek
-							// - atau label "pukul"/"at" tapi kosong/pendek/error
-							const shouldRemove =
-								(isWidgetForWaktuAcara && (isErrorOutput || isTooShort)) ||
-								(isPukulOrAt && (isErrorOutput || isTooShort));
-
-							if (shouldRemove) {
-								toRemove.push(widget);
-							}
-						});
-
-						batchRemove(toRemove);
-					}
-
-
-					// 6. Hapus widget tempat_acara jika kosong atau masih shortcode
-					function removeTempatAcaraIfEmpty() {
-						const toRemove = [];
-
-						document.querySelectorAll('.elementor-widget-heading, .elementor-widget-text-editor').forEach(widget => {
-							const container = widget.querySelector('.elementor-widget-container');
-							if (!container) return;
-
-							const rawHTML = container.innerHTML.toLowerCase();
-							const cleanText = container.textContent.replace(/\s+/g, ' ')
-								.replace(/&nbsp;/gi, ' ')
-								.trim()
-								.toLowerCase();
-
-							// Apakah ini widget untuk [wedding_info field="tempat_acara"]
-							const isTempatAcaraShortcode = /\[wedding_info\s+field=["']tempat_acara["']/i.test(rawHTML);
-
-							// Deteksi label lokasi yang umum
-							const labelKeywords = ['tempat', 'alamat', 'address', 'location'];
-							const startsWithLabel = labelKeywords.some(label => cleanText.startsWith(label));
-
-							// Deteksi kalau output error
-							const errorKeywords = ['not found', 'null', 'undefined'];
-							const isErrorOutput = errorKeywords.some(k => cleanText.includes(k));
-
-							// Terlalu pendek → misalnya cuma "tempat :", atau "alamat :"
-							const isTooShort = cleanText.length < 10;
-
-							const shouldRemove =
-								(isTempatAcaraShortcode && (isErrorOutput || isTooShort)) ||
-								(startsWithLabel && (isErrorOutput || isTooShort));
-
-							if (shouldRemove) {
-								toRemove.push(widget);
-							}
-						});
-
-						batchRemove(toRemove);
-					}
-
-
-					// 7. Kosongkan SEMUA isi .ls-con jika deskripsi_ls kosong/null
-					function removeLoveStoryContainersIfEmpty() {
-						// Fallback deteksi shortcode bila marker PHP belum aktif di beberapa halaman
-						const shortcodeRegex = /\[wedding_info\s+field=["']deskripsi_ls["']\s+ls_index=["']\d+["']\]/i;
-
-						// Kata-kata error / kosong yang valid untuk dianggap "tidak ada konten"
-						const errorWords = /(not\s*found|null|undefined|tidak tersedia|^\s*-\s*$)/i;
-
-						// Helper: widget dianggap "trivial" bila benar-benar tidak ada nilai konten
-						function isTrivialWidget(widget) {
-							if (!widget) return true;
-
-							// widget structural
-							if (
-								widget.classList.contains('elementor-widget-divider') ||
-								widget.classList.contains('elementor-widget-spacer')
-							) return true;
-
-							const box = widget.querySelector('.elementor-widget-container') || widget;
-							const raw = box.innerHTML || '';
-							const txt = (box.textContent || '').replace(/\s+/g, ' ').trim();
-
-							// Ada media berarti bukan trivial
-							if (/<(img|iframe|video|audio|picture|svg)\b/i.test(raw)) return false;
-
-							// Kosong beneran
-							if (txt === '' || errorWords.test(txt)) return true;
-
-							// Dilunakkan: jangan anggap heading pendek otomatis trivial
-							if (widget.classList.contains('elementor-widget-heading')) {
-								// Hanya heading super pendek (<= 10) yang bisa dianggap trivial
-								if (txt.length <= 10) return true;
-								return false;
-							}
-
-							// Dilunakkan: text-editor
-							if (widget.classList.contains('elementor-widget-text-editor')) {
-								const words = txt.split(' ').filter(Boolean).length;
-								// Dulu: words <= 3 && txt.length <= 24 → TERLALU AGRESIF
-								// Sekarang: benar-benar sangat pendek saja yang dianggap trivial
-								if (words === 0 || txt.length <= 2) return true;
-								return false;
-							}
-
-							// Default: bukan trivial
-							return false;
-						}
-
-						document.querySelectorAll('.ls-con').forEach(container => {
-							let foundDeskripsi = false;
-							let deskripsiEmpty = false;
-
-							// 1) PRIORITAS: marker hasil patch PHP
-							const marker = container.querySelector('.deskripsi-ls-marker');
-							if (marker) {
-								foundDeskripsi = true;
-								const markerText = (marker.textContent || '').replace(/\s+/g, ' ').trim();
-								if (markerText === '' || errorWords.test(markerText)) {
-									deskripsiEmpty = true;
-								}
-							}
-
-							// 2) FALLBACK: deteksi berbasis shortcode (kalau marker tidak ada)
-							if (!foundDeskripsi) {
-								const textish = container.querySelectorAll(
-									'.elementor-widget-text-editor, .elementor-widget-heading, .elementor-widget-heading :is(h1,h2,h3,h4,h5,h6)'
-								);
-
-								textish.forEach(el => {
-									const widget = el.closest('.elementor-widget') || el;
-									const box = widget.querySelector('.elementor-widget-container') || widget;
-									const html = box.innerHTML || '';
-									const text = (box.textContent || '').replace(/\s+/g, ' ').trim();
-
-									// Jika widget ini memuat deskripsi_ls (sebagai shortcode atau hasil render)
-									if (shortcodeRegex.test(html) || shortcodeRegex.test(text)) {
-										foundDeskripsi = true;
-										// PENTING: untuk deskripsi_ls, JANGAN pakai isTrivialWidget
-										if (text === '' || errorWords.test(text)) {
-											deskripsiEmpty = true;
-										}
-									}
-								});
-							}
-
-							// 3) Tidak ditemukan marker/shortcode → nilai agregat: semua widget trivial?
-							if (!foundDeskripsi) {
-								const widgets = Array.from(container.querySelectorAll('.elementor-widget'));
-								const allTrivial = widgets.length > 0 && widgets.every(isTrivialWidget);
-								if (allTrivial) deskripsiEmpty = true;
-							}
-
-							// 4) Eksekusi penghapusan bila benar-benar kosong
-							if (deskripsiEmpty) {
-								// 🔒 Bersihkan spacer/divider yang HANYA DI DALAM .ls-con
-								container
-									.querySelectorAll('.elementor-widget-divider, .elementor-widget-spacer')
-									.forEach(el => el.remove());
-
-								// Lalu hapus .ls-con itu sendiri
-								container.remove();
-								// ❌ Tidak menyentuh elemen di luar .ls-con
-							}
-						});
-					}
-
-
-
-					// 8) Hapus SELURUH .stream-con di FRONTEND jika link_streaming kosong/invalid
-					function removeStreamContainersIfEmpty() {
-						// Di editor: jangan hapus; cukup matikan klik supaya tidak kabur dari canvas
-						if (typeof isElementorEditing === 'function' && isElementorEditing()) {
-							document.querySelectorAll('.stream-con a').forEach(a => {
-								a.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); });
-								a.style.pointerEvents = 'none';
-							});
-							return;
-						}
-
-						const errorWords = /(not\s*found|null|undefined|tidak\s*tersedia|^\s*-\s*$)/i;
-
-						const isBadHref = (hrefRaw) => {
-							const h = (hrefRaw || '').trim();
-							if (!h) return true;
-							const l = h.toLowerCase();
-							// placeholder & pola "Not Found."
-							if (
-								l === '#' || l === '-' || l === 'null' || l === 'undefined' ||
-								l === 'http://not%20found.' || l === 'https://not%20found.' ||
-								l.includes('not%20found') || l.includes('not found') ||
-								l.includes('tidak%20tersedia')
-							) return true;
-							try {
-								const u = new URL(h.html);
-								if (!u.hostname) return true;
-							} catch (e) {
-								return true;
-							}
-							return false;
-						};
-
-						const toRemove = [];
-
-						document.querySelectorAll('.stream-con').forEach(container => {
-							// 1) Prioritas: marker dari shortcode (jika dipakai di Text Editor)
-							const marker = container.querySelector('.link-streaming-marker');
-
-							if (marker) {
-								const a = marker.querySelector('a'); // kalau format=link
-								const raw = a ? (a.getAttribute('href') || '').trim()
-									: (marker.textContent || '').replace(/\s+/g, ' ').replace(/&nbsp;/gi, ' ').trim();
-
-								const invalid = (raw.length < 5) || errorWords.test(raw) || isBadHref(raw);
-								if (invalid) {
-									toRemove.push(container);
-								}
-								return; // sudah divalidasi via marker
-							}
-
-							// 2) Fallback (tanpa marker): cek semua <a> di dalam .stream-con (termasuk tombol Elementor)
-							const links = Array.from(container.querySelectorAll('a'));
-							if (links.length === 0) { // tidak ada link sama sekali
-								toRemove.push(container);
-								return;
-							}
-
-							// anggap valid jika ADA minimal satu link dengan href yang baik
-							const hasValid = links.some(a => !isBadHref(a.getAttribute('href') || ''));
-							if (!hasValid) {
-								toRemove.push(container);
-							}
-						});
-
-						// ✅ Hapus batch (tanpa naik DOM—pola yg sama dgn .kh-con)
-						batchRemove(toRemove);
-					}
-
-
-					// 9) Hapus SELURUH .gift-con di FRONTEND jika no_rekening kosong/invalid/marker tidak ada
-					function removeGiftConIfNoRekeningEmpty() {
-						if (typeof isElementorEditing === 'function' && isElementorEditing()) return;
-
-						const errorWords = /(not\s*found|null|undefined|tidak\s*tersedia|^\s*-\s*$)/i;
-						const toRemove = [];
-
-						// 🔁 Sama seperti sistem #4 (acara): iterasi per-container
-						document.querySelectorAll('.gift-con').forEach(container => {
-							// cari marker yg dibungkus dari shortcode PHP
-							const marker = container.querySelector('.no-rekening-marker');
-
-							// ❶ Jika marker tidak ada → kartu ini invalid (PHP sengaja tidak render marker)
-							if (!marker) {
-								toRemove.push(container);
-								return;
-							}
-
-							// ❷ Jika marker ada → validasi teks & digit
-							const raw = (marker.textContent || '').replace(/\s+/g, ' ').trim();
-							const digits = raw.replace(/\D+/g, '');
-
-							// Minimal 6 digit agar “kelihatan” sbg rekening + tidak mengandung kata error
-							const invalid = (digits.length < 6) || errorWords.test(raw);
-							if (invalid) {
-								toRemove.push(container);
-								return;
-							}
-
-							// kalau ada marker & lolos validasi → biarkan
-						});
-
-						// ✅ Hapus batch (tanpa "naik DOM" dan tanpa sentuh spacer/divider, persis sistem #4)
-						batchRemove(toRemove);
-					}
-
-					// Intercept tombol copy agar menyalin angka dari .no-rekening-marker (bukan HTML)
-					function fixCopyButtonsForNoRekening() {
-						// cari semua tombol/anchor yang kemungkinan tombol copy di dalam gift-con
-						const candidates = document.querySelectorAll(
-							'.gift-con a, .gift-con button, .gift-con [role="button"]'
-						);
-
-						candidates.forEach(btn => {
-							// cegah binding ganda
-							if (btn.__nrCopyBound) return;
-
-							const txt = (btn.textContent || '').toLowerCase();
-							const aria = (btn.getAttribute('aria-label') || '').toLowerCase();
-							const title = (btn.getAttribute('title') || '').toLowerCase();
-							const cls = (btn.className || '');
-
-							// heuristik: tombol berteks/label "copy/salin" atau ada class copy
-							const looksLikeCopy =
-								/copy|salin/.test(txt + ' ' + aria + ' ' + title) ||
-								/\b(copy|btn-copy|wpcp-copy|weddingpress-copy)\b/i.test(cls);
-
-							if (!looksLikeCopy) return;
-
-							// cari marker rekening di kartu yang sama
-							const container = btn.closest('.gift-con');
-							if (!container) return;
-							const marker = container.querySelector('.no-rekening-marker');
-							if (!marker) return;
-
-							const value = (marker.getAttribute('data-plain') || marker.textContent || '')
-								.replace(/\s+/g, ' ')
-								.trim();
-
-							if (!value) return;
-
-							// Set juga data-clipboard-text (kalau plugin pakai clipboard.js, ini langsung kepakai)
-							btn.setAttribute('data-clipboard-text', value);
-
-							// Intercept klik → paksa copy angka murni
-							btn.addEventListener('click', function (e) {
-								try {
-									// kalau plugin lain juga handle, kita ambil alih
-									e.preventDefault();
-									e.stopPropagation();
-								} catch (_) { }
-
-								// Clipboard API
-								const copyText = value;
-								if (navigator.clipboard && navigator.clipboard.writeText) {
-									navigator.clipboard.writeText(copyText).then(() => {
-										showCopiedHint(btn);
-									}).catch(() => {
-										legacyCopy(copyText, btn);
-									});
-								} else {
-									legacyCopy(copyText, btn);
-								}
-							}, true);
-
-							btn.__nrCopyBound = true;
-						});
-
-						function legacyCopy(text, btn) {
-							const ta = document.createElement('textarea');
-							ta.value = text;
-							ta.style.position = 'fixed';
-							ta.style.opacity = '0';
-							document.body.appendChild(ta);
-							ta.select();
-							try { document.execCommand('copy'); } catch (_) { }
-							document.body.removeChild(ta);
-							showCopiedHint(btn);
-						}
-
-						function showCopiedHint(btn) {
-							// feedback kecil (opsional)
-							const old = btn.getAttribute('data-old-text') || btn.textContent;
-							btn.setAttribute('data-old-text', old);
-							btn.textContent = 'Tersalin!';
-							setTimeout(() => { btn.textContent = btn.getAttribute('data-old-text') || old; }, 1200);
-						}
-					}
-
-
-					// 10) Hapus SELURUH .kh-con di FRONTEND jika [wedding_info field="nama_kh"] kosong/invalid
-					function removeKhConIfEmpty() {
-						if (typeof isElementorEditing === 'function' && isElementorEditing()) return;
-
-						const errorWords = /(not\s*found|null|undefined|tidak\s*tersedia|^\s*-\s*$)/i;
-						const toRemove = [];
-
-						// 🔁 Sama pola dgn #4/#9: iterasi per-CONTAINER
-						document.querySelectorAll('.kh-con').forEach(container => {
-							// cari marker yg dibungkus dari PHP
-							const marker = container.querySelector('.nama-kh-marker');
-
-							// ❶ Jika marker TIDAK ada → anggap invalid (PHP sengaja tak render marker di FE)
-							if (!marker) {
-								toRemove.push(container);
-								return;
-							}
-
-							// ❷ Jika marker ADA → validasi konten
-							const text = (marker.textContent || '')
-								.replace(/\s+/g, ' ')
-								.replace(/&nbsp;/gi, ' ')
-								.trim();
-
-							const isTooShort = text.length < 2; // “-”, spasi, dsb.
-							const isError = errorWords.test(text);
-
-							if (isTooShort || isError) {
-								toRemove.push(container);
-								return;
-							}
-
-							// ada marker & lolos validasi → biarkan
-						});
-
-						// ✅ Hapus batch (tanpa naik DOM—persis pola #4)
-						batchRemove(toRemove);
-					}
-
-
-					// 11. Hapus .amplop-section jika TIDAK ada .gift-con maupun .kh-con (dinamis)
-					function removeAmplopSectionIfEmpty() {
-						if (typeof isElementorEditing === 'function' && isElementorEditing()) return;
-
-						const toRemove = [];
-
-						document.querySelectorAll('.amplop-section').forEach(section => {
-							// cek sisa blok hadiah/kado setelah pembersihan lain jalan
-							const hasGift = !!section.querySelector('.gift-con');
-							const hasKh = !!section.querySelector('.kh-con');
-
-							if (!hasGift && !hasKh) {
-								toRemove.push(section);
-							}
-						});
-
-						if (toRemove.length) {
-							requestAnimationFrame(() => {
-								toRemove.forEach(sec => {
-									// rapikan divider/spacer tetangga agar tidak menyisakan jarak kosong
-									const prev = sec.previousElementSibling;
-									const next = sec.nextElementSibling;
-									const isDivOrSpace = el => el && (
-										el.classList?.contains('elementor-widget-divider') ||
-										el.classList?.contains('elementor-widget-spacer')
-									);
-									if (isDivOrSpace(prev)) prev.remove();
-									if (isDivOrSpace(next)) next.remove();
-									sec.remove();
-								});
-							});
-						}
-					}
-
-
-					// 12. Hapus .ls-section jika di dalamnya TIDAK ada .ls-con (dinamis)
-					function removeLsSectionIfEmpty() {
-						if (typeof isElementorEditing === 'function' && isElementorEditing()) return;
-
-						const toRemove = [];
-
-						document.querySelectorAll('.ls-section').forEach(container => {
-							const hasLsCon = !!container.querySelector('.ls-con'); // cek keberadaan .ls-con
-							if (!hasLsCon) {
-								toRemove.push(container);
-							}
-						});
-
-						if (toRemove.length) {
-							requestAnimationFrame(() => {
-								toRemove.forEach(c => {
-									// rapikan divider/spacer tetangga agar tidak menyisakan jarak kosong
-									const prev = c.previousElementSibling;
-									const next = c.nextElementSibling;
-									const isDivOrSpace = el => el && (
-										el.classList?.contains('elementor-widget-divider') ||
-										el.classList?.contains('elementor-widget-spacer')
-									);
-									if (isDivOrSpace(prev)) prev.remove();
-									if (isDivOrSpace(next)) next.remove();
-									c.remove();
-								});
-							});
-						}
-					}
-
-
-
-					// Jalankan semua
-					function runCleanup() {
-						removeButtonsLokasiIfEmpty();
-						cleanSocialWidgets();
-						removeEmptyHTMLWidgets();
-						removeAcaraContainerIfEmpty();
-						removeWaktuAcaraIfEmpty();
-						removeTempatAcaraIfEmpty();
-						removeLoveStoryContainersIfEmpty();
-						removeStreamContainersIfEmpty();
-						removeGiftConIfNoRekeningEmpty();
-						removeKhConIfEmpty();
-						removeAmplopSectionIfEmpty();
-						removeLsSectionIfEmpty();
-						fixCopyButtonsForNoRekening();
-					}
-					window.runCleanup = runCleanup;
-
-					// Pertama kali
-					//   if (isElementorEditing()) { console.log('[cleanup] Editor → skip'); return; }
-
-					runCleanup();
-					setTimeout(runCleanup, 250);
-					setTimeout(runCleanup, 800);
-
-
-					// Observer dengan debounce
-					let cleanupTimeout;
-					const observer = new MutationObserver(mutations => {
-						if (mutations.some(m => m.addedNodes.length || m.removedNodes.length)) {
-							clearTimeout(cleanupTimeout);
-							cleanupTimeout = setTimeout(runCleanup, 100);
-						}
-					});
-					observer.observe(document.body, { childList: true, subtree: true });
-
-					// Hook Elementor
-					if (window.elementorFrontend && window.elementorFrontend.hooks) {
-						['button.default', 'social-icons.default', 'html.default', 'container'].forEach(type => {
-							elementorFrontend.hooks.addAction(`frontend/element_ready/${type}`, runCleanup);
-						});
-					}
-
-				});
-			</script>
+			<script src="src/utils/wp-helper.js"></script>
 			<script>
 				const lazyloadRunObserver = () => {
 					const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
