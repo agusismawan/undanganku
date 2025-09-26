@@ -1951,12 +1951,24 @@
 														</div>
 													</form>
 													<div id="timeline"></div>
-													<div id="popup-alert" class="popup-alert">
-														<div class="popup-box">
-															<p id="popup-message"></p>
-															<button onclick="closePopup()" style="border-radius: 9px;">OK</button>
-														</div>
+													<div id="popup-alert" class="popup-alert" style="display:none;">
+													<div class="popup-box">
+														<p id="popup-message"></p>
+														<button onclick="closePopup()" style="border-radius: 9px;">OK</button>
 													</div>
+													</div>
+
+													<script>
+													function showPopup(message) {
+														document.getElementById("popup-message").textContent = message;
+														document.getElementById("popup-alert").style.display = "flex";
+													}
+
+													function closePopup() {
+														document.getElementById("popup-alert").style.display = "none";
+													}
+													</script>
+
 												</div>
 											</div><!--.cui-container-form-->
 										</div><!--.cui-clearfix cui-relative-->
