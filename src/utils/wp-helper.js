@@ -54,7 +54,6 @@ function isDivOrSpace(el) {
             el.classList.contains('elementor-widget-spacer')));
 }
 
-
 // 1. Hapus semua tombol lokasi-btn kosong / invalid (kebal "Not Found.")
 function removeButtonsLokasiIfEmpty() {
     const toRemove = [];
@@ -126,8 +125,6 @@ function removeButtonsLokasiIfEmpty() {
         toRemove.forEach(el => el.remove());
     });
 }
-
-
 
 // 2. Hapus social widget kosong
 // ====== Social widget cleaner ======
