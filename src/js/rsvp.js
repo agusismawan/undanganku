@@ -9,6 +9,14 @@ export function setupRSVP() {
   let allComments = [];
   let currentPage = 1;
 
+  function showPopup(message) {
+    document.getElementById("popup-message").textContent = message;
+    document.getElementById("popup-alert").style.display = "flex";
+  }
+  function closePopup() {
+    document.getElementById("popup-alert").style.display = "none";
+  }
+
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
     const submitBtn = form.querySelector('button[type="submit"]');
@@ -43,12 +51,12 @@ export function setupRSVP() {
       }
 
       form.reset();
-      alert("Terima kasih, ucapan Anda sudah terkirim!");
+      showPopup("Terima kasih, ucapan Anda sudah terkirim!");
       allComments.unshift(payload);
       renderTimeline(1);
     } catch (err) {
       console.error("Post error:", err);
-      alert("Gagal mengirim. Coba lagi.");
+      showPopup("Gagal mengirim. Coba lagi.");
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = originalBtnText;
